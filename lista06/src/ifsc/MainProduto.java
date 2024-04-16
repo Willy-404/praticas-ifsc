@@ -73,7 +73,7 @@ public class MainProduto {
 			System.out.println(desktop.getFabricante());
 			System.out.println(desktop.getGamer());
 			System.out.println(desktop.getCodigodebarras());
-			//System.out.println(desktop.getPecas());
+			//System.out.println(desktop.getPecas()); fiz do jeito errado ahhhhhhhhhhh
 			for (String peca : desktop.getPecas()) {
 				System.out.println(peca);
 			}
