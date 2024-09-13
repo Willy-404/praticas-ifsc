@@ -1,3 +1,3 @@
-# praticas-p3-ifsc
+# praticas-ifsc
  Atividades de Programação
  IFSC Turma I4
