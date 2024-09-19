@@ -1,3 +1,4 @@
+package exerciciosAula2;
 
 
 public class Contatinho {
