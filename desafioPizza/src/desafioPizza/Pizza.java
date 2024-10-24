@@ -12,6 +12,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
 public class Pizza extends JFrame {
@@ -71,9 +72,6 @@ public class Pizza extends JFrame {
 		JCheckBox chckbxSabor1 = new JCheckBox("R$10 Peperoni");
 		chckbxSabor1.setBounds(21, 84, 136, 23);
 		getContentPane().add(chckbxSabor1);
-		if (chckbxSabor1.isSelected()) {
-			valorPizza+=10;
-		}
 		
 		JCheckBox chckbxSabor2 = new JCheckBox("R$10 Calabreso");
 		chckbxSabor2.setBounds(21, 110, 136, 23);
@@ -124,7 +122,7 @@ public class Pizza extends JFrame {
 		}
 		
 		JComboBox comboBoxTeleEntrega = new JComboBox();
-		comboBoxTeleEntrega.setModel(new DefaultComboBoxModel(new String[] {"R$5 Tele  Entrega", "R$5 Retirada no Local"}));
+		comboBoxTeleEntrega.setModel(new DefaultComboBoxModel(new String[] {"R$10 Tele  Entrega", "Retirada no Local"}));
 		comboBoxTeleEntrega.setFont(new Font("Tahoma", Font.BOLD, 12));
 		comboBoxTeleEntrega.setBounds(10, 346, 191, 28);
 		getContentPane().add(comboBoxTeleEntrega);
@@ -154,6 +152,28 @@ public class Pizza extends JFrame {
 		JButton btnNewButton = new JButton("Calcular Valor");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				int contadorSabor = 0;
+				if (chckbxSabor1.isSelected()) {
+					contadorSabor +=1;
+				}
+				if (chckbxSabor2.isSelected()) {
+					contadorSabor +=1;
+				}
+				if (chckbxSabor3.isSelected()) {
+					contadorSabor +=1;
+				}
+				if (chckbxSabor4.isSelected()) {
+					contadorSabor +=1;
+				}
+				if (chckbxSabor5.isSelected()) {
+					contadorSabor +=1;
+				}
+				
+				if (contadorSabor > 3) {
+					JOptionPane.showMessageDialog(null, "Mais de três Sabores selecionados");
+				}else {
+					
+				}
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 12));
