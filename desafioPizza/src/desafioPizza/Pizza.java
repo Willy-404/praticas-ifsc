@@ -36,6 +36,7 @@ public class Pizza extends JFrame {
 	 * Create the frame.
 	 */
 	public Pizza() {
+		getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 11));
 		setBounds(100, 100, 546, 435);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
@@ -124,8 +125,8 @@ public class Pizza extends JFrame {
 		
 		JComboBox comboBoxTeleEntrega = new JComboBox();
 		comboBoxTeleEntrega.setModel(new DefaultComboBoxModel(new String[] {"R$5 Tele  Entrega", "R$5 Retirada no Local"}));
-		comboBoxTeleEntrega.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		comboBoxTeleEntrega.setBounds(10, 346, 147, 28);
+		comboBoxTeleEntrega.setFont(new Font("Tahoma", Font.BOLD, 12));
+		comboBoxTeleEntrega.setBounds(10, 346, 191, 28);
 		getContentPane().add(comboBoxTeleEntrega);
 		
 		JCheckBox chckbxOpcional1 = new JCheckBox("R$5 Bacon");
