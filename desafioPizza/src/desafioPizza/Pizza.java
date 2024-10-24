@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
+import javax.swing.ImageIcon;
 
 public class Pizza extends JFrame {
 
@@ -44,8 +45,8 @@ public class Pizza extends JFrame {
 		
 		int valorPizza = 0;
 		
-		JLabel lblPizzaria = new JLabel("Presuntos: Pizzaria e Funerária");
-		lblPizzaria.setBounds(136, 11, 256, 20);
+		JLabel lblPizzaria = new JLabel("Willian & Willys: Pizzaria e Conveniência");
+		lblPizzaria.setBounds(94, 11, 342, 20);
 		lblPizzaria.setFont(new Font("Tahoma", Font.BOLD, 16));
 		getContentPane().add(lblPizzaria);
 		
@@ -70,43 +71,38 @@ public class Pizza extends JFrame {
 		getContentPane().add(lblOpcionais);
 		
 		JCheckBox chckbxSabor1 = new JCheckBox("R$10 Peperoni");
+		chckbxSabor1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		chckbxSabor1.setBounds(21, 84, 136, 23);
 		getContentPane().add(chckbxSabor1);
 		
 		JCheckBox chckbxSabor2 = new JCheckBox("R$10 Calabreso");
+		chckbxSabor2.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		chckbxSabor2.setBounds(21, 110, 136, 23);
 		getContentPane().add(chckbxSabor2);
-		if (chckbxSabor2.isSelected()) {
-			valorPizza+=10;
-		}
 		
 		JCheckBox chckbxSabor3 = new JCheckBox("R$10 Margarina");
+		chckbxSabor3.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		chckbxSabor3.setBounds(21, 136, 136, 23);
 		getContentPane().add(chckbxSabor3);
-		if (chckbxSabor3.isSelected()) {
-			valorPizza+=10;
-		}
 		
 		JCheckBox chckbxSabor4 = new JCheckBox("R$5 Dois-Queijos");
+		chckbxSabor4.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		chckbxSabor4.setBounds(21, 162, 136, 23);
 		getContentPane().add(chckbxSabor4);
-		if (chckbxSabor4.isSelected()) {
-			valorPizza+=10;
-		}
 		
-		JCheckBox chckbxSabor5 = new JCheckBox("R$5 Pinhão");
+		JCheckBox chckbxSabor5 = new JCheckBox("R$15 Pinhão");
+		chckbxSabor5.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		chckbxSabor5.setBounds(21, 188, 136, 23);
 		getContentPane().add(chckbxSabor5);
-		if (chckbxSabor1.isSelected()) {
-			valorPizza+=10;
-		}		
 		
 		JRadioButton rdbtnComBorda = new JRadioButton("R$10 Com Borda");
+		rdbtnComBorda.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		rdbtnComBorda.setSelected(true);
 		rdbtnComBorda.setBounds(15, 255, 142, 23);
 		getContentPane().add(rdbtnComBorda);
 		
 		JRadioButton rdbtnSemBorda = new JRadioButton("R$5 Sem Borda");
+		rdbtnSemBorda.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		rdbtnSemBorda.setBounds(15, 281, 142, 23);
 		getContentPane().add(rdbtnSemBorda);
 		
@@ -127,52 +123,83 @@ public class Pizza extends JFrame {
 		comboBoxTeleEntrega.setBounds(10, 346, 191, 28);
 		getContentPane().add(comboBoxTeleEntrega);
 		
-		JCheckBox chckbxOpcional1 = new JCheckBox("R$5 Bacon");
-		chckbxOpcional1.setBounds(282, 84, 142, 23);
-		getContentPane().add(chckbxOpcional1);
+		JCheckBox chOpcional1 = new JCheckBox("R$5 Bacon");
+		chOpcional1.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		chOpcional1.setBounds(282, 84, 142, 23);
+		getContentPane().add(chOpcional1);
 		
-		JCheckBox chckbxOpcional2 = new JCheckBox("R$5 Batata-Frita");
-		chckbxOpcional2.setBounds(282, 110, 142, 23);
-		getContentPane().add(chckbxOpcional2);
+		JCheckBox chOpcional2 = new JCheckBox("R$5 Batata-Frita");
+		chOpcional2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		chOpcional2.setBounds(282, 110, 142, 23);
+		getContentPane().add(chOpcional2);
 		
-		JCheckBox chckbxOpcional3 = new JCheckBox("R$5 Alho-Frito");
-		chckbxOpcional3.setBounds(282, 136, 142, 23);
-		getContentPane().add(chckbxOpcional3);
+		JCheckBox chOpcional3 = new JCheckBox("R$5 Alho-Frito");
+		chOpcional3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		chOpcional3.setBounds(282, 136, 142, 23);
+		getContentPane().add(chOpcional3);
 		
-		JCheckBox chckbxOpcional4 = new JCheckBox("R$5 Chimarrão");
-		chckbxOpcional4.setBounds(282, 162, 142, 23);
-		getContentPane().add(chckbxOpcional4);
+		JCheckBox chOpcional4 = new JCheckBox("R$5 Chimarrão");
+		chOpcional4.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		chOpcional4.setBounds(282, 162, 142, 23);
+		getContentPane().add(chOpcional4);
 
 		
 		JLabel lblValorPizza = new JLabel("");
-		lblValorPizza.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblValorPizza.setBounds(270, 321, 147, 23);
+		lblValorPizza.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblValorPizza.setBounds(277, 318, 147, 23);
 		getContentPane().add(lblValorPizza);		
 		
 		JButton btnNewButton = new JButton("Calcular Valor");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int contadorSabor = 0;
+				int valorPizza = 0;
 				if (chckbxSabor1.isSelected()) {
 					contadorSabor +=1;
+					valorPizza+=10;
 				}
 				if (chckbxSabor2.isSelected()) {
 					contadorSabor +=1;
+					valorPizza+=10;
 				}
 				if (chckbxSabor3.isSelected()) {
 					contadorSabor +=1;
+					valorPizza+=10;
 				}
 				if (chckbxSabor4.isSelected()) {
 					contadorSabor +=1;
+					valorPizza+=5;
 				}
 				if (chckbxSabor5.isSelected()) {
 					contadorSabor +=1;
+					valorPizza+=15;
 				}
 				
-				if (contadorSabor > 3) {
-					JOptionPane.showMessageDialog(null, "Mais de três Sabores selecionados");
+				if(rdbtnComBorda.isSelected()) {
+					valorPizza+=10;
 				}else {
-					
+					valorPizza+=5;
+				}
+				
+				String opcaoSelecionada = (String) comboBoxTeleEntrega.getSelectedItem();
+				if (opcaoSelecionada == "R$10 Tele  Entrega") {
+					valorPizza+=10;
+				}
+				
+				if (chOpcional1.isSelected()) {
+					valorPizza+=5;
+				}if (chOpcional2.isSelected()) {
+					valorPizza+=5;
+				}if (chOpcional3.isSelected()) {
+					valorPizza+=5;
+				}if (chOpcional4.isSelected()) {
+					valorPizza+=5;
+				}
+				
+				if (contadorSabor > 3||contadorSabor < 1) {
+					JOptionPane.showMessageDialog(null, "Selecione no mínimo 1 e no máximo 3 Sabores");
+				}else {
+					lblValorPizza.setText("O Valor é R$"+valorPizza+",00");
 				}
 			}
 		});
@@ -180,6 +207,15 @@ public class Pizza extends JFrame {
 		btnNewButton.setBounds(270, 272, 132, 39);
 		getContentPane().add(btnNewButton);
 		
+		JLabel Icone1 = new JLabel("");
+		Icone1.setIcon(new ImageIcon("C:\\Users\\Aluno\\Downloads\\praticas-ifsc-main\\desafioPizza\\Imagens\\esfinge.png"));
+		Icone1.setBounds(435, 10, 31, 39);
+		getContentPane().add(Icone1);
+		
+		JLabel Icone2 = new JLabel("");
+		Icone2.setIcon(new ImageIcon("C:\\Users\\Aluno\\Downloads\\praticas-ifsc-main\\desafioPizza\\Imagens\\esfingeC.png"));
+		Icone2.setBounds(53, 10, 31, 39);
+		getContentPane().add(Icone2);
+		
 	}
-	
 }
