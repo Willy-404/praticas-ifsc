@@ -207,15 +207,5 @@ public class Pizza extends JFrame {
 		btnNewButton.setBounds(270, 272, 132, 39);
 		getContentPane().add(btnNewButton);
 		
-		JLabel Icone1 = new JLabel("");
-		Icone1.setIcon(new ImageIcon("C:\\Users\\Aluno\\Downloads\\praticas-ifsc-main\\desafioPizza\\Imagens\\esfinge.png"));
-		Icone1.setBounds(435, 10, 31, 39);
-		getContentPane().add(Icone1);
-		
-		JLabel Icone2 = new JLabel("");
-		Icone2.setIcon(new ImageIcon("C:\\Users\\Aluno\\Downloads\\praticas-ifsc-main\\desafioPizza\\Imagens\\esfingeC.png"));
-		Icone2.setBounds(53, 10, 31, 39);
-		getContentPane().add(Icone2);
-		
 	}
 }
