@@ -16,10 +16,10 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         stage.setTitle("Somador de Números");
-        
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/SomarView.fxml"));
         Parent root = loader.load();
-        
+
         Scene cena = new Scene(root);
         stage.setScene(cena);
         stage.show();

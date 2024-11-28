@@ -1,3 +1,4 @@
+controller\PesquisaController.class
 controller\SomarController.class
 module-info.class
 principal\App.class
