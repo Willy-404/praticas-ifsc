@@ -72,7 +72,6 @@
                   </Button>
                </children>
             </GridPane>
-            <Button fx:id="btnTela2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClickBtnTela2" text="Tela2" textAlignment="CENTER" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>

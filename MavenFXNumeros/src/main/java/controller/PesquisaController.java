@@ -52,9 +52,9 @@ public class PesquisaController {
 
     @FXML
     private TextField txtFieldNome;
-    
+
     @FXML
-    void submeterPesquisa(ActionEvent event) {
+    void onClickBtnSubmeterPesquisa(ActionEvent event) {
 
     }
 

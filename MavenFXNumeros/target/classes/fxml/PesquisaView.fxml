@@ -30,9 +30,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <ToggleButton fx:id="tglButtonWindows" layoutX="190.0" layoutY="83.0" mnemonicParsing="false" text="Windows" />
-      <ToggleButton fx:id="tglButtonLinux" layoutX="268.0" layoutY="83.0" mnemonicParsing="false" text="Linux" />
-      <ToggleButton fx:id="tglButtonMac" layoutX="322.0" layoutY="83.0" mnemonicParsing="false" text="Mac" />
       <Label fx:id="lblLinguagemProg" layoutX="17.0" layoutY="122.0" text="Linguagem de Programação Predileta:">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -51,6 +48,9 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </CheckBox>
-      <Button fx:id="btnSubmeter" layoutX="232.0" layoutY="188.0" mnemonicParsing="false" onAction="#submeterPesquisa" text="Submeter Pesquisa" textAlignment="CENTER" />
+      <Button fx:id="btnSubmeter" layoutX="232.0" layoutY="188.0" mnemonicParsing="false" onAction="#onClickBtnSubmeterPesquisa" text="Submeter Pesquisa" textAlignment="CENTER" />
+      <ToggleButton fx:id="tglButtonWindows" layoutX="212.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Windows" />
+      <ToggleButton fx:id="tglButtonLinux" layoutX="291.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Linux" />
+      <ToggleButton fx:id="tglButtonMac" layoutX="368.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Mac" />
    </children>
 </AnchorPane>

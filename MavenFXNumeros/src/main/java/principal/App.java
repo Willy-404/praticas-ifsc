@@ -17,7 +17,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         stage.setTitle("Somador de Números");
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/SomarView.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Principal.fxml"));
         Parent root = loader.load();
 
         Scene cena = new Scene(root);
