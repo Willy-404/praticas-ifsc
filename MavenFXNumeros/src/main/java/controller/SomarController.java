@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -80,7 +81,11 @@ public class SomarController implements Initializable {
             Double soma = numero1 + numero2;
             lblFinal.setText(soma.toString());
         } catch (NumberFormatException n) {
-            System.out.println("Número Inválido");
+        Alert alerta = new Alert(Alert.AlertType.ERROR);
+        alerta.setTitle("Erro!");
+        alerta.setHeaderText("Caracter Invalido");
+        alerta.setContentText("Digite apenas numeros");
+        alerta.showAndWait();
         }
     }
 

@@ -45,15 +45,19 @@ public class PrincipalController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/PesquisaView.fxml"));
         Parent root = loader.load();
 
-        Stage stage = new Stage();
+        Stage stagePesquisa = new Stage();
 
-        PesquisaController t2c = loader.getController();
-        //Sc.setStage(stage);
+        PesquisaController pc = loader.getController();
+        pc.setStage(stagePesquisa);
+        
+        stagePesquisa.setOnShown(evento -> {
+        pc.ajustarElementosJanela();
+    });
 
-        Scene cena2 = new Scene(root);
-        stage.setTitle("Pesquisa");
-        stage.setScene(cena2);
-        stage.show();
+        Scene cenaPesquisa = new Scene(root);
+        stagePesquisa.setTitle("Pesquisa");
+        stagePesquisa.setScene(cenaPesquisa);
+        stagePesquisa.show();
     }
 
     @FXML
@@ -67,11 +71,11 @@ public class PrincipalController {
 
     @FXML
     void btnSobreClick(ActionEvent event) {
-        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-        alerta.setTitle("Sobre");
-        alerta.setHeaderText("Informações do Sistema");
-        alerta.setContentText("Sistema Aula PDS-1");
-        alerta.showAndWait();
+        Alert sobre = new Alert(Alert.AlertType.INFORMATION);
+        sobre.setTitle("Sobre");
+        sobre.setHeaderText("Informações do Sistema");
+        sobre.setContentText("Sistema Aula PDS-1");
+        sobre.showAndWait();
     }
 
     @FXML
@@ -80,6 +84,10 @@ public class PrincipalController {
         Parent root = loader.load();
 
         Stage telaSomar = new Stage();
+        
+        //Passar a instância do controller para a nova tela para manipular por meio do controller
+        SomarController sc = loader.getController();
+        sc.setStage(telaSomar);
 
         Scene cena = new Scene(root);
 

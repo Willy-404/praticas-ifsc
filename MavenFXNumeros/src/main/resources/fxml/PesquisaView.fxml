@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="255.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PesquisaController">
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PesquisaController">
    <children>
       <Label fx:id="lblPesquisa" layoutX="197.0" layoutY="14.0" text="Pesquisa Sobre Programação" textAlignment="CENTER">
          <font>
@@ -48,9 +48,10 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </CheckBox>
-      <Button fx:id="btnSubmeter" layoutX="232.0" layoutY="188.0" mnemonicParsing="false" onAction="#onClickBtnSubmeterPesquisa" text="Submeter Pesquisa" textAlignment="CENTER" />
+      <Button fx:id="btnSubmeter" layoutX="248.0" layoutY="223.0" mnemonicParsing="false" onAction="#onClickBtnSubmeterPesquisa" text="Submeter Pesquisa" textAlignment="CENTER" />
       <ToggleButton fx:id="tglButtonWindows" layoutX="212.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Windows" />
       <ToggleButton fx:id="tglButtonLinux" layoutX="291.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Linux" />
       <ToggleButton fx:id="tglButtonMac" layoutX="368.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Mac" />
+      <Button fx:id="btnFechar" layoutX="115.0" layoutY="223.0" mnemonicParsing="false" onAction="#onClickBtnFechar" text="Fechar" textAlignment="CENTER" />
    </children>
 </AnchorPane>
