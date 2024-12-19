@@ -1,4 +1,4 @@
-package controller;
+    package controller;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
@@ -38,6 +39,9 @@ public class PrincipalController {
 
     @FXML
     private MenuItem menuSomar;
+    
+    @FXML
+    private ComboBox<String> cbIDE; 
 
     @FXML
     void btnPesquisaClick(ActionEvent event) throws IOException {

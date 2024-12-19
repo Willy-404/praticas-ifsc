@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
@@ -53,5 +54,7 @@
       <ToggleButton fx:id="tglButtonLinux" layoutX="291.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Linux" />
       <ToggleButton fx:id="tglButtonMac" layoutX="368.0" layoutY="83.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="70.0" text="Mac" />
       <Button fx:id="btnFechar" layoutX="115.0" layoutY="223.0" mnemonicParsing="false" onAction="#onClickBtnFechar" text="Fechar" textAlignment="CENTER" />
+      <ComboBox fx:id="comboIDE" layoutX="275.0" layoutY="156.0" prefWidth="150.0" />
+      <Label fx:id="ferramentaIDE" layoutX="192.0" layoutY="160.0" text="Ferramenta IDE" />
    </children>
 </AnchorPane>
